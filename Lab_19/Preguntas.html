@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Acceso Basado en Roles y Análisis de Sistemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .reference {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Control de Acceso Basado en Roles y Análisis de Sistemas</h1>
+
+    <h2>¿En qué consiste el control de acceso basado en roles?</h2>
+    <p>El control de acceso basado en roles (RBAC, por sus siglas en inglés) es un enfoque de seguridad que restringe el acceso a los recursos del sistema a los usuarios en función de sus roles dentro de una organización. En RBAC, los permisos para realizar ciertas operaciones están asociados a roles específicos, y los usuarios son asignados a estos roles, obteniendo así los permisos asignados.</p>
+    <p>Este método simplifica la administración de permisos, ya que los administradores solo necesitan asignar roles a los usuarios y gestionar los permisos a nivel de roles, en lugar de a nivel de usuario individual.</p>
+
+    <h2>Análisis de Sistemas con y sin RBAC</h2>
+    <h3>Sistema con RBAC: Active Directory</h3>
+    <p><strong>Active Directory (AD)</strong> de Microsoft es un servicio de directorio que utiliza RBAC para gestionar los permisos y el acceso a recursos en una red. En AD, los administradores pueden asignar roles a los usuarios y estos roles definen qué recursos pueden acceder y qué acciones pueden realizar.</p>
+    <ul>
+        <li><strong>Ventajas:</strong>
+            <ul>
+                <li>Facilidad de gestión de permisos.</li>
+                <li>Mayor seguridad y control granular sobre los accesos.</li>
+                <li>Reducción del riesgo de errores humanos al asignar permisos.</li>
+            </ul>
+        </li>
+        <li><strong>Desventajas:</strong>
+            <ul>
+                <li>Complejidad inicial en la configuración de roles y permisos.</li>
+                <li>Requiere una gestión continua para adaptarse a cambios organizacionales.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Sistema sin RBAC: Sistema de Archivos Unix</h3>
+    <p><strong>El sistema de archivos Unix</strong> utiliza un modelo de permisos basado en usuarios y grupos en lugar de roles. Cada archivo y directorio tiene permisos específicos para el propietario (usuario), el grupo y otros usuarios.</p>
+    <ul>
+        <li><strong>Ventajas:</strong>
+            <ul>
+                <li>Simplicidad en la configuración y comprensión de los permisos.</li>
+                <li>Adecuado para sistemas con un número reducido de usuarios.</li>
+            </ul>
+        </li>
+        <li><strong>Desventajas:</strong>
+            <ul>
+                <li>Dificultad para gestionar permisos en entornos con muchos usuarios y recursos.</li>
+                <li>Falta de flexibilidad para definir permisos granulares.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

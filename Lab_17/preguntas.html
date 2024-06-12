@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventajas del SQL en el Modelo y Prevención de Inyección SQL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .reference {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ventajas del SQL en el Modelo y Prevención de Inyección SQL</h1>
+
+    <h2>¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?</h2>
+    <p>Escribir el código SQL exclusivamente en la capa del modelo tiene varias ventajas:</p>
+    <ul>
+        <li><strong>Encapsulación de la lógica de datos:</strong> Mantener el SQL en el modelo garantiza que toda la lógica relacionada con la base de datos esté encapsulada en un solo lugar, lo que facilita su mantenimiento y actualización.</li>
+        <li><strong>Seguridad mejorada:</strong> Al centralizar el acceso a la base de datos, es más fácil implementar y revisar medidas de seguridad, reduciendo el riesgo de vulnerabilidades como la inyección SQL.</li>
+        <li><strong>Reutilización y consistencia:</strong> El código SQL bien estructurado en el modelo puede ser reutilizado por diferentes partes de la aplicación, asegurando la consistencia en la manera en que se acceden y manipulan los datos.</li>
+        <li><strong>Facilidad de prueba:</strong> Al mantener la lógica de datos separada, es más sencillo realizar pruebas unitarias y de integración en la capa del modelo sin necesidad de preocuparse por la interfaz de usuario.</li>
+    </ul>
+    <p class="reference">Referencia: <a href="https://www.codeproject.com/Articles/392188/MVC-pattern-advantages-and-disadvantages" target="_blank">CodeProject</a></p>
+
+    <h2>¿Qué es la injección SQL y cómo se puede prevenir?</h2>
+    <p>La inyección SQL es una vulnerabilidad de seguridad que ocurre cuando un atacante inserta o "inyecta" código SQL malicioso en una consulta SQL existente, lo que puede permitirle manipular o acceder a la base de datos de manera no autorizada.</p>
+    <p>Para prevenir la inyección SQL, se pueden tomar las siguientes medidas:</p>
+    <ul>
+        <li><strong>Uso de consultas parametrizadas:</strong> Las consultas parametrizadas aseguran que el código SQL y los datos del usuario estén claramente separados, evitando que los datos del usuario sean interpretados como parte del código SQL.</li>
+        <li><strong>ORM (Mapeo Objeto-Relacional):</strong> Utilizar un ORM puede abstraer la interacción directa con la base de datos y manejar automáticamente las consultas parametrizadas, reduciendo el riesgo de inyección SQL.</li>
+        <li><strong>Validación y sanitización de entrada:</strong> Validar y limpiar todos los datos proporcionados por el usuario antes de utilizarlos en consultas SQL puede prevenir la inyección de comandos maliciosos.</li>
+        <li><strong>Principio de privilegios mínimos:</strong> Asegurar que las cuentas de base de datos utilizadas por la aplicación tengan los mínimos privilegios necesarios para realizar sus funciones puede limitar el daño en caso de una inyección SQL exitosa.</li>
+    </ul>
+    <p class="reference">Referencia: <a href="https://owasp.org/www-community/attacks/SQL_Injection" target="_blank"> SQL Injection</a></p>
+</body>
+</html>

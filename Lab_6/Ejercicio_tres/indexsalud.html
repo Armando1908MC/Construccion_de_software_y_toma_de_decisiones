@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor de Pulso Cardíaco</title>
+    <link rel="stylesheet" href="stylessalud.css">
+</head>
+<body>
+    <div class="background-images">
+        <img src="https://img.freepik.com/vector-gratis/grafico-forma-corazon-vector-linea-latido-medico-rojo-concepto-caridad-salud_53876-111265.jpg?w=740&t=st=1716789018~exp=1716789618~hmac=5894881486672dd594a148261588bb209e55ccfdd62d2880c79d83b19aa80f9c" alt="Pulso" class="pulse-image pulse-image1">
+        <img src="https://img.freepik.com/vector-gratis/corazon-degradado-latido-corazon-ecg_78370-951.jpg?w=740&t=st=1716789050~exp=1716789650~hmac=53c0b4328b0f15b3db9a2e4b666d36ae04e09953176511866ec3bc1b20cdb519" alt="Pulso" class="pulse-image pulse-image2">
+        <img src="https://img.freepik.com/vector-gratis/dos-lineas-ecg-rojo-glifo_78370-1006.jpg?w=826&t=st=1716789033~exp=1716789633~hmac=0488da5c13ed1d986fbce28824c28b4dfbd708a4caa6b3888317e668aa7523e1" alt="Pulso" class="pulse-image pulse-image3">
+        <img src="https://img.freepik.com/vector-gratis/corazon-latido_78370-2027.jpg?w=826&t=st=1716789068~exp=1716789668~hmac=e8b12de5e34f7bd352528ad9d18df568c3dd926e7f1c26926dfdd7aaeef5818a" alt="Pulso" class="pulse-image pulse-image4">
+    </div>
+    <div class="container">
+        <h1>Medidor de Pulso Cardíaco</h1>
+        <!-- Formulario para ingresar la edad y el pulso cardíaco en reposo -->
+        <form id="pulseForm">
+            <div class="form-group">
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" min="1" step="1" required>
+            </div>
+            <div class="form-group">
+                <label for="pulse">Pulso en Reposo (bpm):</label>
+                <input type="number" id="pulse" name="pulse" min="1" step="1" required>
+            </div>
+            <button type="submit">Evaluar Pulso</button>
+        </form>
+        <!-- Contenedor para mostrar el resultado -->
+        <div id="result" class="result"></div>
+    </div>
+    <script src="scriptsalud.js"></script>
+</body>
+</html>

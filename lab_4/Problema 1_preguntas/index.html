@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Cuadrados y Cubos</title>
+</head>
+<body>
+    <h1>Problema 1</h1>
+    <script>
+        // Solicita al usuario un número
+        var numero = prompt("Introduce un número:");
+
+        // Convierte el número a un entero
+        numero = parseInt(numero);
+
+        // Verifica que el número sea válido
+        if (isNaN(numero)) {
+            document.write("Por favor, introduce un número válido.");
+        } else {
+            // Crea un título para la tabla
+            document.write("<h2>Tabla de Números, Cuadrados y Cubos</h2>");
+
+            // Crea la tabla
+            document.write("<table border='1'>");
+            document.write("<tr><th>Número</th><th>Cuadrado</th><th>Cubo</th></tr>");
+
+            // Rellena la tabla con los números, sus cuadrados y cubos
+            for (var i = 1; i <= numero; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                document.write("<td>" + (i * i) + "</td>");
+                document.write("<td>" + (i * i * i) + "</td>");
+                document.write("</tr>");
+            }
+
+            // Cierra la tabla
+            document.write("</table>");
+        }
+    </script>
+
+    <h2>Preguntas</h2>
+    <p><strong>1. ¿Qué diferencias y semejanzas hay entre Java y JavaScript?</strong></p>
+    <p>R: 
+    <ul>
+        <li><strong>Diferencias:</strong></li>
+        <ul>
+            <li>Java es un lenguaje de programación orientado a objetos y compilado, mientras que JavaScript es un lenguaje de scripting interpretado y basado en prototipos.</li>
+            <li>Java se usa principalmente en aplicaciones del lado del servidor y aplicaciones móviles, mientras que JavaScript se usa principalmente en desarrollo web del lado del cliente.</li>
+        </ul>
+        <li><strong>Semejanzas:</strong></li>
+        <ul>
+            <li>Ambos lenguajes comparten una sintaxis similar basada en C.</li>
+            <li>Ambos se pueden usar para el desarrollo web, aunque en diferentes contextos.</li>
+        </ul>
+    </ul>
+    </p>
+
+    <p><strong>2. ¿Qué métodos tiene el objeto Date?</strong></p>
+    <p>R:
+    <ul>
+        <li>getDate(): Devuelve el día del mes (1-31).</li>
+        <li>getDay(): Devuelve el día de la semana (0-6).</li>
+        <li>getFullYear(): Devuelve el año completo (4 dígitos).</li>
+        <li>getMonth(): Devuelve el mes (0-11).</li>
+        <li>getHours(): Devuelve la hora (0-23).</li>
+    </ul>
+    </p>
+
+    <p><strong>3. ¿Qué métodos tienen los arreglos?</strong></p>
+    <p>R:
+    <ul>
+        <li>push(): Añade uno o más elementos al final de un array y devuelve la nueva longitud del array.</li>
+        <li>pop(): Elimina el último elemento de un array y lo devuelve.</li>
+        <li>shift(): Elimina el primer elemento de un array y lo devuelve.</li>
+        <li>unshift(): Añade uno o más elementos al inicio de un array y devuelve la nueva longitud del array.</li>
+        <li>forEach(): Ejecuta una función proporcionada una vez para cada elemento de un array.</li>
+    </ul>
+    </p>
+
+    <p><strong>4. ¿Cómo se declara una variable con alcance local dentro de una función?</strong></p>
+    <p>R: Para declarar una variable con alcance local dentro de una función, se utiliza la palabra clave <code>var</code>, <code>let</code> o <code>const</code> dentro de la función. Por ejemplo:
+    <pre>
+function miFuncion() {
+    let variableLocal = "Local";
+}
+    </pre>
+    </p>
+
+    <p><strong>5. ¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong></p>
+    <p>R:
+    <ul>
+        <li>Las variables globales pueden ser modificadas por cualquier parte del código, lo que puede llevar a errores difíciles de depurar.</li>
+        <li>El uso excesivo de variables globales puede afectar el rendimiento de la aplicación debido al mayor tiempo de búsqueda de variables en el ámbito global.</li>
+        <li>Pueden causar conflictos de nombres si diferentes partes del código utilizan las mismas variables globales para propósitos diferentes.</li>
+    </ul>
+    </p>
+
+    <h2>Fuentes</h2>
+    <ul>
+        <li><a href="https://www.guru99.com/difference-between-java-and-javascript.html">Diferencias y semejanzas entre Java y JavaScript - Guru99</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Métodos del objeto Date - MDN Web Docs</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Métodos de los arreglos - MDN Web Docs</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">Declaración de variables con alcance local - MDN Web Docs</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#scoping_rules">Implicaciones de utilizar variables globales - MDN Web Docs</a></li>
+    </ul>
+</body>
+</html>

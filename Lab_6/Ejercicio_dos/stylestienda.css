@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f8fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product h2 {
+    color: #555;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin: 5px 0;
+    color: #666;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.totals {
+    margin-top: 20px;
+}
+
+.totals p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals p span {
+    font-weight: bold;
+}
+
+.changed-style {
+    font-style: italic;
+    color: #ff6347;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,107 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Grupo de formularios */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Campos de entrada */
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #9b59b6;
+    color: #333;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9b59b6;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+/* Indicador de fortaleza de la contraseña */
+.password-strength {
+    height: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.password-strength div {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+/* Mensajes */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2ecc71;
+}

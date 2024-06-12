@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="Ejercicio_uno/index.html">Validador de Contraseñas</a>
+    <a href="Ejercicio_dos/index_tienda.html">Tienda de Productos</a>
+    <a href="Ejercicio_tres/indexsalud.html">Medidor de Pulso Cardíaco</a>
+</div>
+
+<section>
+    <h2>Preguntas y Respuestas sobre Validación en JavaScript</h2>
+
+    <h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h3>
+    <p>
+        Usar JavaScript para validar los inputs de los formularios en el lado del cliente antes de enviar los datos al servidor es una buena práctica por varias razones:
+        <ul>
+            <li><strong>Mejora la Experiencia del Usuario:</strong> La validación en el lado del cliente es instantánea y proporciona retroalimentación inmediata al usuario, mejorando la usabilidad y la experiencia general del usuario.</li>
+            <li><strong>Reduce la Carga en el Servidor:</strong> Al interceptar y corregir errores de validación en el lado del cliente, se reduce la cantidad de solicitudes inválidas enviadas al servidor, lo que puede disminuir la carga del servidor y mejorar el rendimiento general de la aplicación.</li>
+            <li><strong>Ahorra Ancho de Banda:</strong> Evitar el envío de datos incorrectos al servidor puede ahorrar ancho de banda, especialmente si la validación se realiza antes de enviar formularios grandes o complejos.</li>
+            <li><strong>Previene Errores Simples:</strong> La validación en el lado del cliente puede capturar errores simples, como campos obligatorios no completados o formatos de entrada incorrectos (por ejemplo, direcciones de correo electrónico mal formateadas), antes de que lleguen al servidor.</li>
+        </ul>
+        Referencias: 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation" target="_blank">MDN Web Docs sobre Validación de Formularios</a>
+    </p>
+
+    <h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
+    <p>
+        La seguridad de las validaciones hechas con JavaScript puede ser burlada de varias maneras, entre ellas:
+        <ul>
+            <li><strong>Deshabilitar JavaScript:</strong> Un usuario puede desactivar JavaScript en su navegador, lo que evitaría que cualquier validación en el lado del cliente se ejecute.</li>
+            <li><strong>Modificar el Código del Cliente:</strong> Un usuario avanzado puede modificar el código JavaScript directamente en el navegador, usando herramientas de desarrollo como las que proporciona Chrome o Firefox, para saltarse las validaciones.</li>
+            <li><strong>Uso de Herramientas de Prueba:</strong> Herramientas como Postman o scripts personalizados pueden ser usados para enviar solicitudes HTTP directamente al servidor, ignorando completamente cualquier validación en el lado del cliente.</li>
+        </ul>
+        Referencias: 
+        <a href="https://didacticode.com/como-saltarse-validacion-html5-formulario/" target="_blank">Didactic code</a>
+    </p>
+
+    <h3>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué es una buena práctica?</h3>
+    <p>
+        Aunque las validaciones de JavaScript pueden ser burladas, siguen siendo una buena práctica por las siguientes razones:
+        <ul>
+            <li><strong>Primera Línea de Defensa:</strong> Las validaciones en el lado del cliente actúan como la primera línea de defensa para errores simples y proporcionan una mejor experiencia de usuario al ofrecer retroalimentación inmediata.</li>
+            <li><strong>Mejor Rendimiento y Eficiencia:</strong> Al filtrar errores simples y obvios en el lado del cliente, se reduce la carga del servidor y el tráfico innecesario, mejorando la eficiencia general del sistema.</li>
+            <li><strong>Complemento a la Seguridad del Lado del Servidor:</strong> Aunque no deben ser la única línea de defensa, las validaciones en el lado del cliente deben complementarse con validaciones en el lado del servidor. Esto asegura que, incluso si un usuario malicioso intenta burlar la validación del cliente, el servidor aún tiene mecanismos para verificar y rechazar datos incorrectos o maliciosos.</li>
+            <li><strong>Usabilidad:</strong> Proporcionar retroalimentación inmediata a los usuarios mejora la usabilidad de la aplicación, haciendo que sea más fácil y rápido para los usuarios corregir sus errores antes de enviar los datos.</li>
+        </ul>
+        Referencias: 
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank">MDN Web Docs sobre Validación de Formularios</a>, 
+        <a href="https://www.tutorialspoint.com/javascript/javascript_form_validations.htm" target="_blank">TutorialsPoint sobre Validaciones de Formularios en JavaScript</a>
+    </p>
+</section>
+
+</body>
+</html>

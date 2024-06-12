@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="stylestienda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda de Productos</h1>
+        <div class="product" id="product1">
+            <h2>Producto 1</h2>
+            <div>
+                <p>Precio: $10.00</p>
+                <label for="quantity1">Cantidad:</label>
+                <input type="number" id="quantity1" min="1" max="100" value="1">
+            </div>
+        </div>
+        <div class="product" id="product2">
+            <h2>Producto 2</h2>
+            <div>
+                <p>Precio: $20.00</p>
+                <label for="quantity2">Cantidad:</label>
+                <input type="number" id="quantity2" min="1" max="100" value="1">
+            </div>
+        </div>
+        <div class="product" id="product3">
+            <h2>Producto 3</h2>
+            <div>
+                <p>Precio: $30.00</p>
+                <label for="quantity3">Cantidad:</label>
+                <input type="number" id="quantity3" min="1" max="100" value="1">
+            </div>
+        </div>
+        <div class="totals" id="totals">
+            <p>Total: <span id="total">$0.00</span></p>
+            <p>IVA (16%): <span id="iva">$0.00</span></p>
+            <p>Total con IVA: <span id="totalWithIva">$0.00</span></p>
+        </div>
+        <button onclick="calculateTotal()">Calcular Total</button>
+    </div>
+    <script src="scripttienda.js"></script>
+</body>
+</html>
